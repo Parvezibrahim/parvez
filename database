@@ -167,3 +167,173 @@ int main()
 
     return 0;
 }
+
+04.
+
+int main()
+{
+int age ;
+
+printf("Enter the age of the person: ");
+scanf("%d",&age);
+
+if (age>=18)
+{
+printf("person is eligible for voting");
+}
+else
+{
+printf("person is not eligibal for voting\n");
+}
+return 0;
+}
+
+05.
+#include <stdio.h>
+int main(){
+   int num1, num2, quot, rem;
+
+   printf("Enter dividend: ");
+   scanf("%d", &num1);
+
+   printf("Enter divisor: ");
+   scanf("%d", &num2);
+
+  
+   quot = num1 / num2;
+   rem = num1 % num2;
+
+   printf("Quotient is: %d\n", quot);
+   printf("Remainder is: %d", rem);
+
+   return 0;
+}
+ 
+ 06.
+ 
+ #include <stdio.h>
+ 
+int main()
+{
+  
+    float fh,cl;
+    int choice;
+ 
+    printf("\n1: Convert temperature from Fahrenheit to Celsius."); 
+    printf("\n2: Convert temperature from Celsius to Fahrenheit.");
+    printf("\nEnter your choice (1, 2): ");
+    scanf("%d",&choice);
+ 
+    if(choice ==1){
+        printf("\nEnter temperature in Fahrenheit: ");
+        scanf("%f",&fh);
+        cl= (fh - 32) / 1.8;
+        printf("Temperature in Celsius: %.2f",cl);
+    }
+    else if(choice==2){
+        printf("\nEnter temperature in Celsius: ");
+        scanf("%f",&cl);
+        fh= (cl*1.8)+32;
+        printf("Temperature in Fahrenheit: %.2f",fh);
+    }
+    else{
+        printf("\nInvalid Choice !!!");
+    }
+    return 0;
+}
+
+07.
+
+#include <stdio.h>
+int main()
+{
+   int radius;
+   float PI_VALUE=3.14, area,circumf;
+
+   printf("\nEnter radius of circle: ");
+   
+   scanf("%d",&radius);
+
+  
+   circle_area = PI_VALUE * radius * radius;
+   printf("\nArea of circle is: %f",area);
+
+ 
+   circumf = 2 * PI_VALUE *radius;
+   printf("\nCircumference of circle is: %f",circle_circumf);
+
+   return(0);
+}
+
+08.
+
+#include<stdio.h>
+
+ 
+int main() {
+   int length, breadth, area,perimeter;
+ 
+   printf("\nEnter the Length of Rectangle : ");
+   scanf("%d", &length);
+ 
+   printf("\nEnter the Breadth of Rectangle : ");
+   scanf("%d", &breadth);
+ 
+   area = length * breadth;
+   
+   perimeter=2*(length+breadth);
+
+   printf("\nArea of Rectangle : %d", area);
+   printf("\nPerimeter of Rectangle : %d", perimeter);
+
+ 
+   return (0);
+}
+
+09.
+
+#include <stdio.h>
+ 
+int main()
+{
+    int a,b;
+    int mul,loop;
+     
+    printf("Enter first number: ");
+    scanf("%d",&a);
+    printf("Enter second number: ");
+    scanf("%d",&b);
+     
+    mul=0;
+
+    for(loop=1;loop<=b;loop++){
+        mul += a;
+    }
+
+    printf("Multiplication of %d and %d is: %d\n",a,b,mul);
+
+    return 0;
+}
+
+10.
+
+#include <stdio.h>
+ 
+int main()
+{
+    long decimalnum, remainder, quotient;
+    int octalNumber[100], i = 1, j;
+ 
+    printf("Enter the decimal number: ");
+    scanf("%ld", &decimalnum);
+    quotient = decimalnum;
+    while (quotient != 0)
+    {
+        octalNumber[i++] = quotient % 8;
+        quotient = quotient / 8;
+    }
+    printf("Equivalent octal value of decimal no %d: ", decimalnum);
+    for (j = i - 1; j > 0; j--)
+        printf("%d", octalNumber[j]);
+    return 0;
+}
