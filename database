@@ -57,3 +57,55 @@ int main()
     printf("YOU HAVE BEEN HACKED");
         return 0;
 }
+2.
+#include <stdio.h>
+int main()
+{
+   char z[100] = "I am learning C programming language.";
+
+   printf("%s", z); // %s is format specifier
+
+   return 0;
+}
+
+3.
+#include <stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter any character:");
+    scanf("%c", &ch);
+    printf("ASCII value of character %c is: %d", ch, ch);
+    return 0;
+}
+
+6.
+#include <stdio.h>
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+    if(num % 2 == 0)
+        printf("%d is even.", num);
+    else
+        printf("%d is odd.", num);
+    
+    return 0;
+}
+
+01.
+#include <stdio.h>
+ 
+void main()
+{
+    int i, num, sum = 0,avg;
+ 
+    printf("Enter an integer number \n");
+    scanf ("%d", &num);
+    for (i = 1; i <= num; i++)
+    {
+        sum = sum + i;
+    }
+    avg=sum/num;
+    printf ("Sum of first %d natural numbers = %d\nand average is %d", num, sum,avg);
+}
