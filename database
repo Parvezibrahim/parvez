@@ -109,3 +109,61 @@ void main()
     avg=sum/num;
     printf ("Sum of first %d natural numbers = %d\nand average is %d", num, sum,avg);
 }
+02.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int p,n,r,si;
+    clrscr();
+    printf("Enter Principle, Rate of interest & Time :");
+    scanf("%d%d%d",&p,&r,&n);
+    si=(p*r*n)/100;
+    printf("Simple Interest is :%d",si);
+   }
+   
+   03.
+   
+   
+#include <stdio.h>
+
+int main()
+{
+    int phy, chem, math;
+    float per; 
+
+    
+    printf("Enter three subjects marks: ");
+    scanf("%d%d%d%d%d", &phy, &chem, &math);
+
+    per = (phy + chem + math) / 3;
+
+    printf("Percentage = %.2f\n", per);
+
+    if(per >= 90)
+    {
+        printf("Grade A");
+    }
+    else if(per >= 80)
+    {
+        printf("Grade B");
+    }
+    else if(per >= 70)
+    {
+        printf("Grade C");
+    }
+    else if(per >= 60)
+    {
+        printf("Grade D");
+    }
+    else if(per >= 40)
+    {
+        printf("Grade E");
+    }
+    else
+    {
+        printf("Grade F");
+    }
+
+    return 0;
+}
