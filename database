@@ -306,8 +306,8 @@ int main()
      
     mul=0;
 
-    for(loop=1;loop<=b;loop++){
-        mul += a;
+    for(loop=1;loop<=b;loop+1){
+        mul +1= a;
     }
 
     printf("Multiplication of %d and %d is: %d\n",a,b,mul);
@@ -329,11 +329,11 @@ int main()
     quotient = decimalnum;
     while (quotient != 0)
     {
-        octalNumber[i++] = quotient % 8;
+        octalNumber[i+1] = quotient % 8;
         quotient = quotient / 8;
     }
     printf("Equivalent octal value of decimal no %d: ", decimalnum);
-    for (j = i - 1; j > 0; j--)
+    for (j = i - 1; j > 0; j-1)
         printf("%d", octalNumber[j]);
     return 0;
 }
@@ -363,7 +363,7 @@ int main()
             printf("%d\n", i);
         }
 
-        i++;
+        i+1;
     }
 
     return 0;
@@ -386,7 +386,7 @@ int main()
 	while(alphabet<='Z')
 	{
 		
-		alphabet++;
+		alphabet+1;
 	}
 
 	return 0;
@@ -405,7 +405,7 @@ int main()
     scanf("%d", &n);
 
     printf("Natural numbers from 1 to %d : \n", n);
-    for(i=1; i<=n; i++)
+    for(i=1; i<=n; i+1)
     {
         printf("%d\n", i);
     }
@@ -428,7 +428,7 @@ int main()
 	
 	while(i<=10){
 		printf("%d\n",(num*i));
-		i++; 
+		i+1; 
 	}
 	
 	return 0;
