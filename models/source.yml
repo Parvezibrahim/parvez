@@ -1,0 +1,7 @@
+version: 2
+sources:
+    - name: parvez
+      database: "{{('RESUME_PROJECT')}}"
+      schema: rawdata
+      tables:
+        - name: raw_customer_data
