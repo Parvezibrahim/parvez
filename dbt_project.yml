@@ -40,6 +40,9 @@ models:
     # Applies to all files under models/example/
     example:
       +materialized: table
+<<<<<<< HEAD
     staging:
       +materialized: table
 
+=======
+>>>>>>> 998e57a31e579e64f36bd3926f111ff755f99a13
